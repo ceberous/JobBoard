@@ -1,28 +1,22 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Steps to Create this App
 
 
-Please feel free to use a different markup language if you do not plan to run
+
+1.) rails g model job title:string description:text company:string url:string
+
+2.) rails g controller jobs
+
+3.) Added routes for each job: resources :jobs
+
+4.) Create CRUD Actions in Jobs Controller
+
+5.) rails g model category name:string
+
+6.) rails g migration add_category_id_to_jobs category:integer
+
+7.) 
+
+
 <tt>rake doc:app</tt>.
