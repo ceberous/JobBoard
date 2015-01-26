@@ -1,8 +1,4 @@
-== README
-
-Steps to Create this App
-
-
+== Steps to Create this App
 
 1.) rails g model job title:string description:text company:string url:string
 
@@ -16,7 +12,12 @@ Steps to Create this App
 
 6.) rails g migration add_category_id_to_jobs category:integer
 
-7.) 
+7.) Add Association between (1)Job and a Category
 
+8.) Manually Added Category Types in the Console
+	* Full Time
+	* Part Time
+	* Freelance
+	* Consulting
 
 <tt>rake doc:app</tt>.

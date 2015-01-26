@@ -1,7 +1,12 @@
 <div class="row">
 	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
-		<h1 class="tcenter">All Available Jobs</h1>
+		<% if @category.present? %>
+			<h1 class="tcenter">All <%= @category.name %> Jobs</h1>
+		<% else %>
+			<h1 class="tcenter">All Available Jobs</h1>
+		<% end %>
+		
 
 		<% @jobs.each do |job| %>
 			<h2><%= link_to job.title , job_path(job) %></h2>
