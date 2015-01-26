@@ -1,0 +1,15 @@
+<div class="row">
+
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+	<h1 class="tcenter"><%= @job.title %></h1>
+
+	<p class="tcenter"><%= @job.description %></p>
+
+	<p class="tcenter"><%= @job.company %></p>
+
+	<p class="tcenter"><%= link_to "Job URL" , @job.url %></p>
+
+	<p class="tcenter"><%= link_to "Edit" , edit_job_path(@job) , class: "btn btn-warning" %> | <%= link_to "Delete" , job_path(@job) , method: :delete , data: {confirm: "Are You Sure?"} , class: "btn btn-danger"  %></p>
+
+</div>
