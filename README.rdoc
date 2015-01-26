@@ -17,4 +17,4 @@
 8.) Manually Added Category Types in the Console
 
 
-<tt>rake doc:app</tt>.
+<tt>rake doc:app</tt>
