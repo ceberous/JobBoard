@@ -14,9 +14,13 @@
 	      		</ul>
 	    	</div>
 	  	<% end %>
+		
+		<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
+		<br>
+		<%= f.collection_select :category_id , Category.all , :id , :name , {prompt: "Choose a Category"} , input_html: {class: "dropdown-toggle"} %>
 
-	  	<%= f.collection_select :category_id , Category.all , :id , :name , {prompt: "Choose a Category"} %>
-	
+		<br><br>
+
 		<%= f.input :title , placeholder: "Job Title" , class: "form-control" %>
 		<%= f.input :description , placeholder: "Description" , class: "form-control" %>
 		<%= f.input :company , placeholder: "Company" , class: "form-control" %>
@@ -24,10 +28,12 @@
 
 		<br>
 
-		<%= f.submit %>
-		<br>
-		<%= link_to "Cancel" , root_path %>
-
+		<p class="tcenter">
+			<%= f.submit class: "btn btn-success" %> | 
+			<%= link_to "Cancel" , root_path , class: "btn btn-warning"%>
+		</p>
+		
+		</div>
 	<% end %>
 
 	</div>

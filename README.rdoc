@@ -15,6 +15,3 @@
 7.) Add Association between (1)Job and a Category
 
 8.) Manually Added Category Types in the Console
-
-
-<tt>rake doc:app</tt>

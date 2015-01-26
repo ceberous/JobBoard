@@ -18,8 +18,35 @@
 @import "bootstrap";
 @import "_centering"; 
 
+
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url('/assets/glyphicons-halflings-regular.eot');
   src: url('/assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),      url('/assets/glyphicons-halflings-regular.woff') format('woff'), url('/assets/glyphicons-halflings-regular.ttf') format('truetype'), url('/assets/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 }
+
+body {
+	height: 100%;
+	background: -webkit-linear-gradient(90deg, #FFD159 10%, #FFE191 90%);
+	background:    -moz-linear-gradient(90deg, #FFD159 10%, #FFE191 90%);
+	background:     -ms-linear-gradient(90deg, #FFD159 10%, #FFE191 90%);
+	background:      -o-linear-gradient(90deg, #FFD159 10%, #FFE191 90%);
+	background:         linear-gradient(90deg, #FFD159 10%, #FFE191 90%);
+	font-family: 'Lato', sans-serif;
+}
+
+
+h1 {
+    font-size: 6em;
+    text-align: center;
+}
+
+h1:after {
+    text-shadow: 2px 2px 2px #000000;
+    color: transparent;
+}
+
+a {
+	color: blueviolet;
+}
+
