@@ -15,9 +15,6 @@
 7.) Add Association between (1)Job and a Category
 
 8.) Manually Added Category Types in the Console
-	* Full Time
-	* Part Time
-	* Freelance
-	* Consulting
+
 
 <tt>rake doc:app</tt>.
